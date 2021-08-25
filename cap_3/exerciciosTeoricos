@@ -1,0 +1,106 @@
+3.1{
+	a) public
+	b) class
+	c) new
+	d) tipo e nome
+	e) pacote Padrão
+	f) float e double
+	g) dupla precisão
+	h) nextDouble
+	i) modificador
+	j) void
+	k) nextLine
+	l) java.lang
+	m) import
+	n) número de ponto flutuante 
+	o) simples
+	p) %f
+	q) referência e tipo primitivo
+
+}
+--------------------------------------------------------------
+3.2{
+	a) F - na vdd os métodos devem começar com letras minúsculas. As classes que devem começar comletras maiúsculas
+	b) V
+	c) V
+	d) F - váriaveis de tipo primitivo não podem invocar métodos
+	e) F - Essas variáveis são chamadas
+variáveis locais e só podem ser utilizadas no método em que são declaradas
+	f) V
+	g) F - As variáveis de instância de tipo
+primitivo são inicializadas por padrão. Deve-se atribuir um valor explicitamente a cada variável local.
+	h) V
+	i) V
+	j) V
+	k) F - na verdade, literais de ponto flutuante são double
+	
+}
+
+--------------------------------------------------------------
+3.3{
+	variáveis locais devem ser inicializadas, e variáveis de instância são inicializadas por padrão.
+	Variáveis locais só são acessíveis dentro dos métodos em que foram criadas. Variáveis de instância são acessíveis por todos os métodos da classe.
+
+}
+
+--------------------------------------------------------------
+3.4{
+	Parâmetro é a variável que vai receber um valor em uma função. Exemplo{
+		public int soma(int a, int b){
+			return a + b;
+		}
+	}
+	
+	Argumento é o valor (que pode originar de uma variável ou expressão) que você passa para a função. Exemplo{
+		
+		public static void main(String[] args){
+			Teste.soma(2, 2);
+		}	
+	}
+	
+
+}
+
+--------------------------------------------------------------
+3.5{
+	o objetivo é criar um novo objeto de determinada classe, e com ele podemos atribuir a referência desse objeto a uma variável do tipo referência, ou somente na memória. Além disso o construtor da classe da instância é chamado
+	ex:
+	Account account1 = new Account();
+}
+
+--------------------------------------------------------------
+3.6{
+	Quando um objeto de uma classe é criado, suas variáveis de instância são inicializadas por padrão. O Java requer uma chamada de construtor para todo objeto que é criado. Por padrão, o compilador fornece um construtor padrão sem parâmetros em qualquer classe que não inclui explicitamente um construtor. Variáveis de instância de classe são inicializadas com seus valores padrão
+
+}
+
+--------------------------------------------------------------
+3.7{
+	Quando cada objeto de uma classe mantém sua própria cópia de um atributo, o campo é uma variável de instância. Todo objeto (instância) de classe tem uma instância separada da variável na memória
+}
+
+3.8{
+	Porque as classes System e String já fazem parte do pacote java.lang e são importadas implicitamente em todo programa java, diferente de outras classes que precisam ser importadas explicitamente.
+	
+}
+
+--------------------------------------------------------------
+3.9{
+	chamando o nome do pacote e o nome da classe.
+	Por exemplo: 
+	java.util.Scanner input = new java.util.Scanner(System.in);
+
+}
+
+--------------------------------------------------------------
+3.10{
+	Isso ocorre quando temos variáveis de instâncias privadas, ou seja, ocultadas. Com os métodos get e set, pode-se ter acesso a essa váriavel, seja para obter(get) ou modifia-lás(set). Com estes métodos, não se tem acesso direto à variável, deste modo por exemplo, não seria possível atribuir um valor inicial à ela, ou altera-lá;
+}
+
+
+
+
+
+
+
+
