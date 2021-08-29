@@ -4,9 +4,9 @@ public class Date1 {
     private int year;
 
     public Date1(int day, int month, int year) {
-        this.month = month;
-        this.day = day;
-        this.year = year;
+        this.month  = month;
+        this.day    = day;
+        this.year   = year;
     }
 
     public void displayDate(){

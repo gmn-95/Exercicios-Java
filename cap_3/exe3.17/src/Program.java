@@ -23,9 +23,9 @@ public class Program {
 
         String[] bd = birthDate.split("/");
 
-        int day = Integer.parseInt(bd[0]);
-        int month = Integer.parseInt(bd[1]);
-        int year = Integer.parseInt(bd[2]);
+        int day     = Integer.parseInt(bd[0]);
+        int month   = Integer.parseInt(bd[1]);
+        int year    = Integer.parseInt(bd[2]);
 
         HealthProfile hp = new HealthProfile(name, lastName, day, month, year, height, weight);
 
@@ -35,6 +35,7 @@ public class Program {
         System.out.println("Last name: " + hp.getLastName());
         System.out.println("Birth date: " + hp.getDay() + "/" + hp.getMonth() + "/" + hp.getYear());
         System.out.println("Age: " + hp.ageInyears());
+
         System.out.println("\nMaxmum Heart Rate: " + hp.maxmumHeartRate());
         System.out.printf("Target Heart Rate: %.2f", hp.targetHeartRate());
         System.out.printf("\nIMC: %.2f", hp.imc());

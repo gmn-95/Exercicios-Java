@@ -5,10 +5,10 @@ public class Invoice {
     private double price;
 
     public Invoice(String invoiceNumber, String description, int quantity, double price){
-        this.invoiceNumber = invoiceNumber;
-        this.description = description;
-        this.quantity = quantity;
-        this.price = price;
+        this.invoiceNumber  = invoiceNumber;
+        this.description    = description;
+        this.quantity       = quantity;
+        this.price          = price;
     }
 
     public double getInvoice(){

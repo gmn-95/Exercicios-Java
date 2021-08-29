@@ -13,13 +13,13 @@ public class HealthProfile {
     }
 
     public HealthProfile(String name, String lastName, int day, int month, int year, double height, double weight) {
-        this.name = name;
+        this.name     = name;
         this.lastName = lastName;
-        this.day = day;
-        this.month = month;
-        this.year = year;
-        this.height = height;
-        this.weight = weight;
+        this.day      = day;
+        this.month    = month;
+        this.year     = year;
+        this.height   = height;
+        this.weight   = weight;
     }
 
     public int ageInyears(){
@@ -95,6 +95,6 @@ public class HealthProfile {
     }
 
     public void setWeight(double weight) {
-        weight = weight;
+        this.weight = weight;
     }
 }

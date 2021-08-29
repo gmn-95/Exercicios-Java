@@ -16,9 +16,9 @@ public class Program {
         String birthDate = sc.nextLine();
 
         String[] bd = birthDate.split("/");
-        int day = Integer.parseInt(bd[0]);
-        int month = Integer.parseInt(bd[1]);
-        int year= Integer.parseInt(bd[2]);
+        int day     = Integer.parseInt(bd[0]);
+        int month   = Integer.parseInt(bd[1]);
+        int year    = Integer.parseInt(bd[2]);
 
         HeartRates hr = new HeartRates(name, lastName, day, month, year);
 
@@ -28,8 +28,7 @@ public class Program {
         System.out.println("Age: " + hr.ageInYears());
         System.out.println("Maximum Heart Rate: " + hr.maximumHeartRate());
         System.out.println("Target Heart Rate: " + hr.targetHeartRate());
-
-
+        
         sc.close();
     }
 }

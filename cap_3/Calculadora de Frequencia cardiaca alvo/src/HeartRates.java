@@ -12,11 +12,11 @@ public class HeartRates {
     }
 
     public HeartRates(String name, String lastName, int day, int month, int year) {
-        this.name = name;
-        this.lastName = lastName;
-        this.day = day;
-        this.month = month;
-        this.year = year;
+        this.name       = name;
+        this.lastName   = lastName;
+        this.day        = day;
+        this.month      = month;
+        this.year       = year;
     }
 
     // retorna a idade em anos

@@ -4,9 +4,9 @@ public class Employee {
     private double annualSalary;
 
     public Employee(String name, String lastName, double annualSalary){
-        this.name = name;
-        this.lastName = lastName;
-        this.annualSalary = annualSalary;
+        this.name           = name;
+        this.lastName       = lastName;
+        this.annualSalary   = annualSalary;
     }
 
     public void salaryIncrease(double increase){
