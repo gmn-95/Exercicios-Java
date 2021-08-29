@@ -1,4 +1,28 @@
 3.1{
+
+	Preencha as lacunas em cada uma das seguintes sentenças:
+	a) Toda declaração de classe que inicia com a palavra-chave ________ deve ser armazenada em um arquivo que tem exatamente o
+	mesmo nome que a classe e terminar com a extensão de nome do arquivo .java .
+	b) A palavra-chave ________ em uma declaração de classe é imediatamente seguida pelo nome da classe.
+	c) A palavra-chave ________ solicita memória do sistema para armazenar um objeto, e então chama o construtor da classe correspon-
+	dente para inicializar esse objeto.
+	d) Todo parâmetro deve especificar um(a) ________ e um(a) ________ .
+	e) Por padrão, as classes que são compiladas no mesmo diretório são consideradas como estando no mesmo pacote, conhecido como
+	________ .
+	f) O Java fornece dois tipos primitivos para armazenar números de ponto flutuante na memória: ________ e ________ .
+	g) As variáveis de tipo double representam números de ponto flutuante de ________ .
+	h) O método scanner ________ retorna um valor double .
+	i) A palavra-chave public é um ________ de acesso.
+	j) O tipo de retorno ________ indica que um método não retornará um valor.
+	k) O método Scanner ________ lê os caracteres até encontrar um caractere de nova linha, então retorna esses caracteres como uma
+	String.
+	l) A classe String está no pacote ________ .
+	m) Um(a) ________ não é requerido(a) se você sempre referenciar uma classe por meio do seu nome completamente qualificado.
+	n) Um(a) ________ é um número com um ponto de fração decimal, como 7,33, 0,0975 ou 1000,12345.
+	o) As variáveis de tipo float representam ________ números de ponto flutuante de dupla precisão.
+	p) O especificador de formato ________ é utilizado para gerar saída de valores de tipo float ou double .
+	q) Os tipos no Java são divididos em duas categorias — tipo ________ e tipo ________ .
+
 	a) public
 	b) class
 	c) new
@@ -20,6 +44,24 @@
 }
 --------------------------------------------------------------
 3.2{
+
+	Determine se cada uma das seguintes sentenças é verdadeira ou falsa. Se falsa, explique por quê.
+	a) Por convenção, os nomes de método são iniciados com letra maiúscula, e todas as palavras subsequentes a ele também começam com
+	letra maiúscula.
+	b) Uma declaração import não é necessária quando uma classe em um pacote utiliza outra no mesmo pacote.
+	c) Parênteses vazios que se seguem a um nome de método em uma declaração indicam que ele não requer nenhum parâmetro para
+	realizar sua tarefa.
+	d) Uma variável de tipo primitivo pode ser utilizada para invocar um método.
+	e) As variáveis declaradas no corpo de um método particular são conhecidas como variáveis de instância e podem ser utilizadas em todos
+	os métodos da classe.
+	f) O corpo de todos os métodos é delimitado pelas chaves esquerda e direita ( { e } ).
+	g) As variáveis locais de tipo primitivo são inicializadas por padrão.
+	h) As variáveis de instância de tipo por referência são inicializadas por padrão com o valor null .
+	i) Qualquer classe que contém public static void main(String[] args) pode ser usada para executar um aplicativo.
+	j) O número de argumentos na chamada de método deve corresponder ao de itens na lista de parâmetros da declaração desse método.
+	k) Os valores de ponto flutuante que aparecem no código-fonte são conhecidos como literais de ponto flutuante e são tipos float por
+	padrão.
+
 	a) F - na vdd os métodos devem começar com letras minúsculas. As classes que devem começar comletras maiúsculas
 	b) V
 	c) V
@@ -38,6 +80,9 @@ primitivo são inicializadas por padrão. Deve-se atribuir um valor explicitamen
 
 --------------------------------------------------------------
 3.3{
+	Qual é a diferença entre uma variável local e uma variável de instância?
+	
+	
 	variáveis locais devem ser inicializadas, e variáveis de instância são inicializadas por padrão.
 	Variáveis locais só são acessíveis dentro dos métodos em que foram criadas. Variáveis de instância são acessíveis por todos os métodos da classe.
 
@@ -45,6 +90,8 @@ primitivo são inicializadas por padrão. Deve-se atribuir um valor explicitamen
 
 --------------------------------------------------------------
 3.4{
+	Explique o propósito de um parâmetro de método. Qual a diferença entre um parâmetro e um argumento?
+	
 	Parâmetro é a variável que vai receber um valor em uma função. Exemplo{
 		public int soma(int a, int b){
 			return a + b;
@@ -63,6 +110,8 @@ primitivo são inicializadas por padrão. Deve-se atribuir um valor explicitamen
 
 --------------------------------------------------------------
 3.5{
+	(Palavra-chave new ) Qual é o objetivo da palavra-chave new ? Explique o que acontece quando você a utiliza.
+	
 	o objetivo é criar um novo objeto de determinada classe, e com ele podemos atribuir a referência desse objeto a uma variável do tipo referência, ou somente na memória. Além disso o construtor da classe da instância é chamado
 	ex:
 	Account account1 = new Account();
@@ -70,22 +119,33 @@ primitivo são inicializadas por padrão. Deve-se atribuir um valor explicitamen
 
 --------------------------------------------------------------
 3.6{
+	(Construtores padrão) O que é um construtor padrão? Como as variáveis de instância de um objeto são inicializadas se uma classe tiver
+somente um construtor padrão?
+
 	Quando um objeto de uma classe é criado, suas variáveis de instância são inicializadas por padrão. O Java requer uma chamada de construtor para todo objeto que é criado. Por padrão, o compilador fornece um construtor padrão sem parâmetros em qualquer classe que não inclui explicitamente um construtor. Variáveis de instância de classe são inicializadas com seus valores padrão
 
 }
 
 --------------------------------------------------------------
 3.7{
+	(Variáveis de instância) Explique o propósito de uma variável de instância.
+	
 	Quando cada objeto de uma classe mantém sua própria cópia de um atributo, o campo é uma variável de instância. Todo objeto (instância) de classe tem uma instância separada da variável na memória
 }
 
+--------------------------------------------------------------
 3.8{
+	(Usando classes sem importá-las) A maioria das classes precisa ser importada antes de ser usada em um aplicativo. Por que cada apli-
+cativo pode utilizar as classes System e String sem importá-las antes?
+
 	Porque as classes System e String já fazem parte do pacote java.lang e são importadas implicitamente em todo programa java, diferente de outras classes que precisam ser importadas explicitamente.
 	
 }
 
 --------------------------------------------------------------
 3.9{
+	(Usando uma classe sem importá-la) Explique como um programa pode usar a classe Scanner sem importá-la.
+	
 	chamando o nome do pacote e o nome da classe.
 	Por exemplo: 
 	java.util.Scanner input = new java.util.Scanner(System.in);
@@ -94,13 +154,10 @@ primitivo são inicializadas por padrão. Deve-se atribuir um valor explicitamen
 
 --------------------------------------------------------------
 3.10{
+	(Métodos set e get) Explique por que uma classe pode fornecer um método set e um método get para uma variável de instância.
+	
 	Isso ocorre quando temos variáveis de instâncias privadas, ou seja, ocultadas. Com os métodos get e set, pode-se ter acesso a essa váriavel, seja para obter(get) ou modifia-lás(set). Com estes métodos, não se tem acesso direto à variável, deste modo por exemplo, não seria possível atribuir um valor inicial à ela, ou altera-lá;
 }
-
-
-
-
-
 
 
 
