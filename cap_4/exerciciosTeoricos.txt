@@ -177,4 +177,191 @@ trução while para fazer loop pelas instruções de cálculo e incremento. O lo
 		
 	o programa entrará em um loop infinito, pois z sempre será maior ou igual a zero, para corrigir, 
 	o correto seria utilizar a operação de decremento: sum += --z;
+
+}
+--------------------------------------------------------------------------
+4.10{
+	Compare e contraste a instrução de seleção única if e a instrução de repetição while . Qual é a semelhança dessas duas instruções? Qual
+é a diferença?
+
+	r: a diferença é que if é uma estrutura de condição, ou seja, o bloco dentro dela só será executado quando uma condição for veridica, e só será executada apenas uma única vez, a não ser que o if, estaj em uma estrutura de repetição.
+	já o while  é uma estrutura de repetição, enquanto uma verificação for veridica/falsa ele continuára executando o bloco dentro dele, a não ser que haja alguma condição, função, operação, etc, que faça-o parar.
+}
+
+--------------------------------------------------------------------------
+4.11{
+	Explique o que acontece quando um programa Java tenta dividir um inteiro por outro. O que acontece para a parte fracionária do cálculo?
+Como você pode evitar esse resultado?
+	
+	R: Ao divir um inteiro por outro, ele arredondará o número, fazendo assim com que não haja a parte fracionária. Pode se evitar utilizando double/float, ou realizando um casting de int para double
+	
+}
+
+--------------------------------------------------------------------------
+4.12{
+	Descreva as duas maneiras como as instruções de controle podem ser combinadas.
+	
+	r: podem ser utilizadas indivídualmente, aninhadas, ou dentro de outras estruturas, como estruturas de repetição
+}
+
+--------------------------------------------------------------------------
+4.13{
+	Que tipo de repetição seria apropriado para calcular a soma dos primeiros 100 inteiros positivos? Que tipo seria apropriado para calcular
+a soma de um número arbitrário de inteiros positivos? Descreva brevemente como cada uma dessas tarefas poderia ser realizada.
+
+	r: for e while
+	
+	int sum1 = 0;
+        int sum2 = 0;
+
+        for(int i = 1; i <= 100; i++){
+            sum1 += i;
+        }
+
+        int n = 1;
+        while (n <= 100){
+            sum2 += n++;
+        }
+
+        System.out.println(sum1);
+        System.out.println(sum2);
+}
+
+--------------------------------------------------------------------------
+
+4.14{
+	Qual é a diferença entre pré-incrementar e pós-incrementar uma variável?
+	
+	pré-incrementar: se incrementa no início da instrução ex: ++x
+	pós-incrementar: se incrementa no fim da instrução ex: x++
+}
+
+--------------------------------------------------------------------------
+4.15{
+	Identifique e corrija os erros em cada um dos seguintes fragmentos de código. 
+	[Observação: pode haver mais de um erro em cada trecho de código.]
+
+	a) if (age >= 65);
+		System.out.println("Age is greater than or equal to 65");
+	else
+		System.out.println("Age is less than 65)";
+		
+	
+	r: remover o ';' do if
+	
+	
+	b) int x = 1, total;
+	while (x <= 10)
+	{
+		total += x;
+		++x;
+	}
+	
+	r: inicializar a variável total
+	
+	
+	c) while (x <= 100)
+		total += x;
+		++x;
+			
+	r: adicionar ad chaves '{}' do bloco de código while
+	
+	
+	d) while (y > 0)
+	{
+		System.out.println(y);
+		++y;
+	
+	r: adicionar a chave  '}' 
+}
+
+--------------------------------------------------------------------------
+4.16{
+	O que o seguinte programa imprime?
+	// Exercício 4.16: Mystery.java
+	public class Mystery
+	{
+		public static void main(String[] args)
+		{
+			int x = 1;
+			int total = 0;
+			while (x <= 10)
+			{
+				int y = x * x;
+				System.out.println(y);
+				total += y;
+				++x;
+			}
+			System.out.printf("Total is %d%n", total);
+		}
+	} // fim da classe Mystery
+	
+	
+	r: 	1
+		4
+		9
+		16
+		25
+		36
+		49
+		64
+		81
+		100
+		Total is 385
+
+}
+
+--------------------------------------------------------------------------
+4.25{
+	O que o seguinte programa imprime?
+	
+	int count = 1;
+        while (count <= 10)
+        {
+            System.out.println(count % 2 == 1 ? "****" : "++++++++");
+            ++count;
+        }
+        
+        r:
+        ****
+	++++++++
+	****
+	++++++++
+	****
+	++++++++
+	****
+	++++++++
+	****
+	++++++++
+
+}
+
+--------------------------------------------------------------------------
+4.26{
+	O que o seguinte programa imprime?
+	int row = 10;
+	while (row >= 1)
+	{
+	int column = 1;
+	while (column <= 10)
+	{
+	System.out.print(row % 2 == 1 ? "<" : ">");
+	++column;
+	}
+	--row;
+	System.out.println();
+	}
+	
+	
+	r:
+	>>>>>>>>>>
+	<<<<<<<<<<
+	>>>>>>>>>>
+	<<<<<<<<<<
+	>>>>>>>>>>
+	<<<<<<<<<<
+	>>>>>>>>>>
+	<<<<<<<<<<
+	>>>>>>>>>>
+	<<<<<<<<<<
 }
