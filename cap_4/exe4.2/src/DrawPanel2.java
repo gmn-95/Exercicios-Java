@@ -30,7 +30,7 @@ public class DrawPanel2 extends JPanel {
             g.drawLine(width, bordaY * cont, width - bordaX * cont, height);
 
             g.drawLine(width, height - bordaY * cont, width - bordaX * cont, 0);
-            
+
             loop++;
             cont++;
         }
