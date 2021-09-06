@@ -8,6 +8,7 @@ public class Addition {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
+
         boolean stop = true;
         int number1;
         int number2;
@@ -20,8 +21,6 @@ public class Addition {
                 String n2 = JOptionPane.showInputDialog("Enter second number: ");
 
                 if(n1 == null || n2 == null){
-                    number1 = 0;
-                    number2 = 0;
                     stop = false;
                 }
                 else{

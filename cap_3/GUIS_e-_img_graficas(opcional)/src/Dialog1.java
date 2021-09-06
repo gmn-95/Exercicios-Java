@@ -11,7 +11,7 @@ public class Dialog1 {
         String name = JOptionPane.showInputDialog("What is your name? ");
         String mensage;
         if(name == null){
-            mensage = String.format("Welcome to Java Programming!", name);
+            mensage = "Welcome to Java Programming!";
         }
         else {
             // cria a mensagem
