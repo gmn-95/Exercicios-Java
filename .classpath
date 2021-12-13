@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="cap_3/Calculadora de Frequencia cardiaca alvo/src"/>
+	<classpathentry kind="src" path="cap_3/conta_bancaria/src"/>
+	<classpathentry kind="src" path="cap_3/exe3.12/src"/>
+	<classpathentry kind="src" path="cap_3/exe3.13/src"/>
+	<classpathentry kind="src" path="cap_3/exe3.14/src"/>
+	<classpathentry kind="src" path="cap_3/exe3.17/src"/>
+	<classpathentry kind="src" path="cap_3/GUIS_e-_img_graficas(opcional)/src"/>
+	<classpathentry kind="src" path="cap_4/(opcional)GUIs_e_imgGraficas/src"/>
+	<classpathentry kind="src" path="cap_4/exe4.1_GUIs/src"/>
+	<classpathentry kind="src" path="cap_4/exe4.17/src"/>
+	<classpathentry kind="src" path="cap_4/exe4.2/src"/>
+	<classpathentry kind="src" path="cap_5/desenhando retangulos e ovais/src"/>
+	<classpathentry kind="src" path="cap_5/exe5.16/src"/>
+	<classpathentry kind="src" path="cap_6/NumerosAleatorios/src"/>
+	<classpathentry kind="src" path="cap_6/testes/src"/>
+	<classpathentry kind="src" path="cap_8/src"/>
+	<classpathentry kind="src" path="Tabela Verdade/src"/>
+	<classpathentry kind="output" path="Tabela Verdade/out/production/Tabela Verdade"/>
+</classpath>
